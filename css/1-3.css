@@ -1,0 +1,83 @@
+/*疑似クラス*/
+
+a:hover{
+        font-size: 25px;
+}
+
+/*クリックした時のみ*/
+a:active{
+    font-size: 25px;
+}
+
+/*ユーザがaタグを訪問している状態でリンクをホバーした場合*/
+a:visited:hover{
+    font-size: 30px;
+}
+
+li:first-child{
+    color:red;
+}
+
+li:last-child{
+    color:blue;
+}
+
+/* 兄弟要素を持たない要素*/
+li:only-child{
+    color:yellow;
+}
+
+/*兄弟関係にある要素を選ぶ場合は nth-child    下記は3番目を表す*/
+
+li:nth-child(3){
+    color:purple;
+}
+
+/* :rootはhtmlタグを表す(全部) */
+
+
+
+
+
+
+
+h1::first-letter{
+    color:aqua;
+}
+
+h2::first-line{
+    color:aquamarine
+}
+
+h2::before{
+    content: "title:";
+    color: gray;
+}
+
+a[href]::after{
+    content: url(https://img.icons8.com/small/2x/calendar.png);
+}
+
+.special li::before{
+    content: "?";
+}
+
+.special li {
+    list-style-type:none;
+}
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after{
+    background: gray;
+    border-radius: 5px;
+    bottom: 20px;
+    color: white;
+    content: attr(data-descr);
+    left: 10%;
+    position: absolute;
+    width: 300%;
+}

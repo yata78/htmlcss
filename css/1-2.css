@@ -1,0 +1,25 @@
+p[class]{
+    color: blue;
+}
+
+a[href][title]{
+    font-size: 30px;
+}
+
+a[href][title="neighborhood"]{
+    font-size: 30px;
+}
+
+h1,h2,h3{
+    color: red;
+}
+
+div ul li em{
+    font-size: 25px;
+}
+
+/* ’¼‰ºŽw’è*/
+
+p > em {
+    color:blue;
+}

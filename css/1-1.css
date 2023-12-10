@@ -1,0 +1,18 @@
+
+
+p.text-red{
+    color: red;
+}
+
+.dangerous.large{
+    color:red;
+}
+
+li.dangerous.large{
+    color: red;
+}
+
+#warning{
+    color: red;
+    font-size: 25px;
+}
