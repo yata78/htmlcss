@@ -1,0 +1,79 @@
+/*
+ピクセルは画面計測上の最小単位
+
+font-sizeぷろぱてぃにおけるemは親要素のfont-sizeに対する相対値
+font-size以外のプロパティのem単位は、現在の要素のfont-sizeに対する相対値
+*/
+
+.parent {
+    font-size: 18px;
+}
+
+.child {
+    font-size: 1.0em;
+}
+
+.special {
+    font-size: 9px;
+}
+
+.special {
+    margin-left: 0.5em;
+}
+
+/*
+remはhtml文書の根ノードのfont-sizeプロパティの値を基準とした相対値として定義される
+デフォルトは16px
+*/
+
+.child{
+    font-size: 1rem;
+}
+
+/*
+%は親要素を基準とした相対値
+*/
+.parent{
+    font-size: 80px;
+}
+
+.child{
+    font-size: 50%;
+}
+
+/*
+vhはビューポートの高さを基準とした相対値として定義される
+*/
+
+.box {
+    width: 80px;
+    height: 50vh;
+    background-color: blue;
+}
+
+/*
+vwは横幅
+ビューポートの横幅を基準とした相対値
+*/
+
+.box {
+    width: 30vw;
+    height: 50vh;
+    background-color: red;
+}
+
+/*
+calcは計算
+*/
+
+.blue-box{
+    width: 25vw;
+    height: 25vh;
+    background-color: blue;
+}
+
+.red-box{
+    width: calc(25vw-10px);
+    height: calc(25vh-10px);
+    background-color: red;
+}

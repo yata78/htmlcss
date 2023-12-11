@@ -1,0 +1,94 @@
+/*
+詳細度
+1000:style属性
+100:idセレクタ
+10:クラスセレクタ、属性セレクタ、疑似クラス
+1:要素セレクタと疑似要素
+
+h1{
+    color: red
+} 1
+
+div h1 {
+    color: red
+} 2
+
+.special {
+    color: red
+} 10
+
+h2.special {
+    color: red
+} 11
+
+div#special {
+    color: red
+}101
+
+*/
+
+h1 {
+    color: red;
+}
+
+div h1 {
+    color: blue;
+}
+
+.special {
+    color: green;
+}
+
+h2.fancy {
+    color: red;
+}
+
+h2#gorgeous {
+    color: blue;
+}
+
+/* 
+!important は詳細度を無視できる
+!importantは1つのグループとして扱われる
+
+*/
+
+p {
+    color: blue !important;
+}
+
+div {
+    color: gray!important;
+}
+
+div p {
+    color: pink!important;
+}
+
+/*
+継承
+すべてのプロパティが子要素に継承されるわけではない
+*/
+
+h1 {
+    color: blue;
+}
+
+ul {
+    color: red;
+}
+
+/*
+継承を回避する値としてinitialがある
+*/
+
+strong {
+    color: initial;
+}
+
+ul {
+    color: red;
+}
+
+/*詳細度が完全に同じの場合は最後にあるCSSを適用する
+*/
