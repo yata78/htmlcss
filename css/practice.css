@@ -1,0 +1,52 @@
+:root {
+    --color-angry: #E52258;
+    --color-bad: #4100ff;
+    --color-sad: #00ffff;
+    --small: 0.5rem;
+ }
+ 
+ h3 {
+     color: white;
+ }
+ 
+ .box{
+    width: 100px;
+    height: 100px;
+    padding: var(--small);
+    margin: var(--small);
+    text-align: center;
+    vertical-align: center;
+ }
+ 
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .angry {
+    background-color: var(--color-angry);
+ }
+ 
+ .bad {
+     background-color: var(--color-bad);
+ }
+ 
+ .sad {
+    background-color: var(--color-sad);
+ }
+ 
+ .happy {
+     
+ }
+ 
+ .disgusted {
+     
+ }
+ .surprised {
+     
+ }
+ 
+ /* boxをhoverすると色が変わるCSSを書きましょう。rgbを使って好きな色を選び、透明度を指定しましょう */
+ .box:hover{
+     background-color: rgba(99, 99, 97, 0.715);
+ }

@@ -77,3 +77,32 @@ calc‚ÍŒvZ
     height: calc(25vh-10px);
     background-color: red;
 }
+
+/*
+CSS•Ï”
+*/
+
+:root{
+    --color-warning :#E9C46A;
+    --color-danger: #E76F51;
+   --color-info: #264653;
+   --color-success: #2A9D8F;
+
+   --space-small: 0.25rem;
+   --space-medium: 0.5rem;
+   --space-large: 1rem;
+
+   --font-small: 0.75rem;
+   --font-medium: 1rem;
+   --font-large: 1.25rem;
+}
+
+.big-module{
+    background-color: var(--color-danger);
+
+}
+
+/*
+font-weight‚Ìbolder,lighter‚Íe—v‘f‚Ìfont-weight‚ÅŒˆ’è‚·‚é
+*/
+
