@@ -1,0 +1,81 @@
+/*
+flexboxは余白の配分やコンテンツの並び方を指定することで、ページ構成要素を配置するためのレイアウト方法
+縦方向や横方向、1つの軸に沿ってレイアウトすることも
+*/
+
+.parent {
+    width: 500px;
+    height: 350px;
+    color: white;
+    background-color: yellowgreen;
+    display: flex;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+ }
+ 
+ .bg-red {
+    background-color: salmon;
+ }
+ 
+ .bg-blue {
+    background-color: royalblue;
+ }
+ 
+ .bg-yellow {
+    background-color: gold;
+ }
+
+ .row{
+    flex-direction: row;
+ }
+
+ .row-reverse{
+    flex-direction: row-reverse;
+ }
+
+ .column{
+    flex-direction: column;
+ }
+
+ .nowrap {
+    flex-wrap:nowrap;
+ }
+
+ .wrap {
+    flex-wrap: wrap;
+ }
+
+ .wrap-reverse{
+    flex-wrap: wrap-reverse;
+ }
+
+ /*
+ justify-content
+ フレックスアイテムが主軸上でどのように配置されるべきかを決定する
+ */
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: flex-end;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+/*
+align-items
+対軸上でのフレックスアイテムの配置方法について決定する
+flex-start,flex-end,center,baseline,stretch
+*/
+

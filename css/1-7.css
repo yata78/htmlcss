@@ -1,0 +1,72 @@
+/*
+ポジションプロパティは要素が文書内でどのように配置されるかを指定する
+static relative,sticky abosolute fixedを受け取る
+*/
+
+.contaner {
+    background-color: yellowgreen;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.bg-red {
+    background-color: salmon;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-yellow {
+    background-color: gold;
+}
+
+.relative {
+    position: relative;
+    left: 50px;
+}
+
+/*
+absolute
+親要素から相対的に配置することができる。
+例えば、top30px,left20pxと指定すれば親要素の位置に対して、子要素の上側に30px,左側に20pxを追加されて表示される
+*/
+
+.absolute{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+/*
+fixedはabsoluteに似ている。ビューポートが包含ボックスとして機能する
+*/
+
+.fixed {
+    position: fixed;
+    top: 23px;
+    right: 15px;
+ }
+
+/*
+fixedとrelativeを合わせた値としてstickyがある
+*/
+
+.top {
+    color: white;
+    background: salmon;
+    position: sticky;
+    top: 80px;
+}
+
+/*
+要素がコンテナに納まらない場合はoverflowプロパティ
+visible hidden scroll auto
+*/
+
+.top {
+    overflow-y: scroll;
+}

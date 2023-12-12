@@ -1,0 +1,155 @@
+/*
+コンテンツは文字列や画像等の実際のコンテンツが含まれる。
+領域の大きさはwidthとheightによって決定される。
+widthやheightはコンテンツのみの大きさ。
+paddingやmarginを考慮した上でサイズを決定しなければならない。
+*/
+
+.box {
+    border-style: solid;
+    background-color: yellowgreen;
+    margin: 30px 0;
+}
+
+.padding-1 {
+    padding: 50px;
+}
+
+.padding-2{
+    padding: 50px 100px;
+}
+
+.padding-3{
+    padding: 50px 100px 10px;
+}
+
+/*
+このようにwidthとheightを設定することで横位一列にならず、はみ出してしまうのは
+widhtとheightプロパティが使用可能なHTML要素に対してデフォルトでbox-sizingプロパティの値がcontent-boxと設定されている点に起因する
+*/
+
+/*
+ボーダースタイル
+*/
+
+.border-dashed {
+    border-style: dashed;
+}
+
+.border-dotted {
+    border-style: dotted;
+}
+
+.border-groove {
+    border-style: groove;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+/*
+border-width
+*/
+
+.border-thick {
+    border-width: 10px;
+}
+
+.border-medium {
+    border-width: 5px;
+}
+
+.border-thin {
+    border-width: 1px;
+}
+
+.border-red {
+    border-color: red;
+}
+
+.border-blue {
+    border-color: blue;
+}
+
+/*
+角の丸み
+*/
+
+.box {
+    border-radius: 3em;
+}
+
+/*
+margin
+*/
+
+.margin-1 {
+    margin:50px;
+}
+
+.margin-2 {
+    margin: 50px 100px;
+}
+
+.margin-3 {
+    margin: 50px 100px 10px;
+}
+
+.parent {
+    background-color: yellowgreen;
+    width: 1000px;
+    height: 100px;
+}
+
+.child {
+    background-color: salmon;
+    width: 500px;
+    height: 70px;
+}
+
+.margin-1 {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.margin-2 {
+
+}
+
+/*
+back-groundプロパティ
+*/
+
+div {
+    background-color: yellowgreen;
+}
+
+.case1 {
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg);
+    height: 500px;
+    width: 800px;
+    color: white;
+}
+
+.case2 {
+    /* 背景は画像の後ろに配置されます */
+   background-color: black;
+   /* 背景の繰り返しを防ぎます */
+   /* この節の後半で学習します */
+   background-repeat: no-repeat;
+   background-image: url(https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg);
+   height: 500px;
+   width: 800px;
+   color: white;
+}
+
+div {
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+div{
+    background-position: top left;
+}
+
